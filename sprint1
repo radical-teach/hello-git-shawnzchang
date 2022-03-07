@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class sprint1{
+    public static void main(String[] args){
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter a rating");
+        Int rating = in.nextLine();
+        System.out.println("Enter a safety");
+        Int safety = in.nextLine();
+        int score = calculation(rating,safety);
+        System.out.println(score);
+    }
+    int[] calculation(int rating, int safety){
+        int output = 0;
+        output = (rating/5)*safety;
+        return output;
+    }
+}
